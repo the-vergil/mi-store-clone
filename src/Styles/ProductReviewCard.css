@@ -1,0 +1,25 @@
+.reviewCard {
+    margin: 0.5vmax;
+    background-color: white;
+    padding-bottom: 2vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.reviewCard:hover {
+    transform: translateY(-0.4vmax);
+    box-shadow: 0 6px 15px rgba(53, 53, 53, 0.4);
+}
+
+.reviewCard h5 {
+    margin: 1vmax 0 0.5vmax 2vmax;
+    color: rgb(158, 147, 147)
+}
+
+.reviewCard span {
+    margin: 2vmax;
+}
+
+.reviewCard b {
+    color: orangered;
+}

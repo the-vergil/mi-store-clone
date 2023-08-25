@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import PreNavbar from './Components/PreNavbar.js';
+import Navbar from './Components/Navbar.js';
+import Slider from './Components/Slider.js'
+import Offers from './Components/Offers.js'
+import data from './data/data.json'
+import Heading from './Components/Heading.js'
+import StarProduct from './Components/StarProduct.js'
+import HotAccessoriesMenu from './Components/HotAccessoriesMenu.js'
+import HotAccessories from './Components/HotAccessories.js'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <PreNavbar />
+      <Navbar />
+      <Slider start={data.banner.start}/>
+      <Offers offer={data.offer}/>
+      <Heading text="Star Section"/>
+      <StarProduct starProduct={data.starProduct}/>
+      <HotAccessoriesMenu />
+
+      <Routes>
+        <Route exact path="/music" element={<HotAccessories music={data.hotAccessories.music} musicCover={data.hotAccessoriesCover.music}/>} />
+        <Route exact path="/smartDevice" element={<HotAccessories smartDevice={data.hotAccessories.smartDevice} smartDeviceCover={data.hotAccessoriesCover.smartDevice}/>} />
+        <Route exact path="/home" element={<HotAccessories home={data.hotAccessories.home} homeCover={data.hotAccessoriesCover.home}/>} />
+        <Route exact path="/lifeStyle" element={<HotAccessories lifeStyle={data.hotAccessories.lifeStyle} lifeStyleCover={data.hotAccessoriesCover.lifeStyle}/>} />
+        <Route exact path="/mobileAccessories" element={<HotAccessories mobileAccessories={data.hotAccessories.mobileAccessories} mobileAccessoriesCover={data.hotAccessoriesCover.mobileAccessories}/>} />
+      </Routes>
+
+    </Router>
   );
 }
 
-export default App;
+export default App

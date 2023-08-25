@@ -1,0 +1,180 @@
+/* ------------------Prefooter1-------------------- */
+.PreFooter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1.5vmax;
+}
+
+.PreFooter > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(98, 97, 97);
+    cursor: pointer;
+}
+
+.PreFooter > div:hover svg {
+    fill: rgb(31, 30, 30);
+}
+
+.PreFooter > div:hover p {
+    color: rgb(31, 30, 30);
+}
+
+.PreFooter p {
+    text-align: left;
+    transition: all 0.5s;
+}
+
+.PreFooter svg {
+    transform: scale(1.7) translateY(-0.2vmax);
+    margin: 1vmax;
+    fill: rgb(98, 97, 97);
+    transition: all 0.5s;
+}
+
+/* ------------------Prefooter2-------------------- */
+.PreFooter2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 120px;
+}
+
+.PreFooter2 > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.PreFooter2 > div > p {
+    color: rgb(98, 97, 97);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.vmax;
+    width: 18vmax;
+    margin: 0%;
+}
+
+.PreFooter2 > div > span {
+    color: rgb(98, 97, 97);
+    font-size: 1vmax;
+    width: 18vmax;
+}
+
+.PreFooter2 > div > div > input {
+    border: none;
+    outline: none;
+    padding: 0.5vmax 1vmax;
+    background-color: white;
+    font-size: 1vmax;
+    width: 20.6vmax;
+}
+
+.PreFooter2 > div > div > button {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.PreFooter2 > div > div {
+    border: 1px solid gray;
+}
+
+.PreFooter2 > div:nth-child(2) span {
+    width: 22vmax;
+}
+
+.PreFooter2 > div:nth-child(3) {
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.PreFooter2 > div:last-child {
+    display: flex;
+    flex-direction: row;
+}
+
+.PreFooter2 > div:last-child svg {
+    margin: 1vmax;
+    cursor: pointer;
+    fill: rgb(98, 97, 97);
+    transition: all 0.5s;
+}
+
+.PreFooter2 > div:last-child > svg:hover {
+    fill: rgb(31, 30, 30);
+}
+
+/* ------------------ Footer -------------------- */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    padding: 4.5vmax;
+    background-color: rgb(37, 37, 37);
+    color: rgb(197, 197, 197);
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+    margin: 1vmax;
+}
+
+.footer > div:nth-child(2) {
+    display: block;
+}
+
+.footer > div:nth-child(2) > a {
+    display: inline-block;
+}
+
+.footer > div > a {
+    color: rgb(197, 197, 197);
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0.4vmax 0;
+}
+
+.footer > div > a:hover {
+    color: white;
+}
+
+.footer > div:last-child > div{
+    width: 45%;
+    margin: 1vmax 0;
+    font-size: 0.8vmax;
+}
+
+.footer > div:last-child > button {
+    width: 50%;
+    border: 1px solid;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding: 0.6vmax 0;
+    font-size: 0.98vmax;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: all 0.5s;
+}
+
+.footer > div:last-child > button:hover {
+    background-color: white;
+    color: rgb(37, 37, 37, 0.8)
+}
+
+.footerBorder {
+    background-color: rgb(37, 37, 37);
+    color: white;
+}
+
+.footerBorder > div {
+    border-top: 1px solid rgba(197, 197, 197, 0.185);
+    color: rgb(197, 197, 197);
+    width: 90%;
+    margin: auto;
+    padding: 2vmax;
+    font-size: 0.98vmax;
+}

@@ -1,12 +1,37 @@
 .starProduct {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
-    margin: 1vmax auto;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 5vmax;
+    margin-right: 5vmax;
 }
 
 .starProduct > div:last-child {
     display: flex;
-    flex-wrap: wrap;
-    width: 40.5%;
+    flex-direction: column;
+}
+
+.starProduct img {
+    transition: all 0.5s;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#starProductRightTop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#starProductRightTop img {
+    object-fit: cover;
+}
+
+.starProduct > div {
+    height: 100%;
+    width: 100%;
 }

@@ -1,24 +1,24 @@
 .hotAccesories {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 90vw;
     margin: auto;
+    justify-content: center;
 }
 
-.hotAccesories > div:last-child {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.hotAccesories >div:first-child > img{
+.hotAccesories > div:first-child > img{
+    cursor: pointer;
     transition: all 0.5s;
     width: 22vw;
-    height: 83vh;
+  }
+
+.hotAccesories > div:first-child > img:hover{
+    transform: translateY(-0.4vmax);
+    box-shadow: 0px 6px 15px rgba(53, 53, 53, 0.363);
+
 }
 
-.hotAccesories >div:first-child > img:hover {
-    transform: translateY(-0.4vmax);
-    box-shadow: 0 6px 15px rgba(53, 53, 53, 0.4);
-    cursor: pointer;
-}
+.hotAccesories > div:last-child{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  

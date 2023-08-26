@@ -39,8 +39,8 @@
 /* ------------------Prefooter2-------------------- */
 .PreFooter2 {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    height: 120px;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 8vmax;
 }
 
 .PreFooter2 > div {
@@ -111,7 +111,7 @@
 /* ------------------ Footer -------------------- */
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 2fr;
+    grid-template-columns: 16% 16% 16% 16% 16% 20%;
     padding: 4.5vmax;
     background-color: rgb(37, 37, 37);
     color: rgb(197, 197, 197);
